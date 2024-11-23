@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #444;
+}
+
+/* Container for the form */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align:center;
+}
+
+/* Form Section */
+h1 {
+    text-align: center;
+    color: #fefefe;
+    margin-bottom: 20px;
+    background-color: #444;
+}
+
+h2 {
+    color: #fffdfd;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    background-color: #333;
+}
+
+label {
+    display: block;
+    color: #f8f9fa;
+    background-color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #fb1212;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Buttons */
+button {
+    background-color: #05970c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #fe1b1b;
+}
+
+/* Resume Section */
+#resume {
+    display: none; /* Hidden until the resume is generated */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#resume p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#resume h2 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+
+/* Profile Picture Style */
+.profile-picture {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Maintain a square aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Edit Button inside Resume Section */
+.edit-button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block; /* Inline block to keep consistent with text */
+}
+
+.edit-button:hover {
+    background-color: #f01a1a; /* Darker green on hover */
+}
+
+/* Form Section for Hidden State */
+form {
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+}
